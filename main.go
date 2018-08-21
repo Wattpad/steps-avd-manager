@@ -404,7 +404,7 @@ func main() {
 				break
 			}
 
-			bootWaitTime := time.Duration(300)
+			bootWaitTime := time.Duration(1200)
 
 			if time.Now().After(deviceDetectionStarted.Add(bootWaitTime * time.Second)) {
 				failf("Failed to boot emulator device within %d seconds.", bootWaitTime)
